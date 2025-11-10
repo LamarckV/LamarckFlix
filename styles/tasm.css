@@ -50,3 +50,9 @@ a {
   background-color: rgba(60, 60, 60, 0.737);
   transition: 0.5s ease;
 }
+
+iframe {
+  position: absolute;
+  right: 5%;
+  top: 16%;
+}
