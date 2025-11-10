@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bem vindo</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="shortcut icon" href="assets/favIcon.png" type="image/x-icon">
+  </head>
+  <body>
+    <header>
+      <img class="lamarckflix" src="assets/LAMARCKFLIX.png" alt="LAMARCKFLIX" />
+    </header>
+    <main>
+      <section class="landing">
+        <img
+          class="dexterTitulo"
+          src="assets/DexterSemFundo.png"
+          alt="DEXTER"
+        />
+        <a
+          href="https://youtu.be/YQeUmSD1c3g?si=UAqy-wmJCJSs26FS"
+          target="_blank"
+          ><div class="Trailer">Trailer</div></a
+        >
+        <a
+          href="about/dexter.html"
+          ><div class="about">Saiba mais</div></a
+        >
+      </section>
+      <hr />
+      <section class="principal">
+        <!-- FILMES -->
+         <!-- ONCLICK="" -> É UMA FUNÇÃO EM JAVA SCRIPT QUE FAZ COM QUE O CONTAINER NESSE CASO A IMAGEM SEJA USADO COMO UM LINK, PODENDO MANDAR A PESSOA PARA OUTRO LUGAR -->
+        <h1>Melhores filmes</h1>
+        <article class="filmes">
+          <button class="carousel-btn prev-films" id="prevBtn">←</button>
+          <div class="carousel-wrapper">
+            <div class="carousel-track" id="carouselTrack">
+              <img onclick="window.location.href='about/tasm.html'" src="img/films/tasm.png" class="carousel-card tasm" />
+              <img onclick="window.open('https://www.imdb.com/title/tt3344680/?ref_=ext_shr_lnk', '_blank')" src="img/films/boyka.png" class="carousel-card boyka" />
+              <img onclick="window.open('https://www.imdb.com/title/tt2395427/?ref_=ext_shr_lnk', '_blank')" src="img/films/Avengers.png" class="carousel-card Avengers" />
+              <img onclick="window.open('https://www.imdb.com/title/tt1014759/?ref_=ext_shr_lnk', '_blank')" src="img/films/apm.png" class="carousel-card apm" />
+              <img onclick="window.open('https://www.imdb.com/title/tt2567026/?ref_=ext_shr_lnk', '_blank')" src="img/films/aadp.png" class="carousel-card addp" />
+              <img onclick="window.open('https://www.imdb.com/title/tt0295297/?ref_=ext_shr_lnk', '_blank')" src="img/films/HPcs.png" class="carousel-card hpcs" />
+              <img onclick="window.open('https://www.imdb.com/title/tt0330373/?ref_=ext_shr_lnk', '_blank')" src="img/films/HPcf.png" class="carousel-card hpcf" />
+              <img onclick="window.open('https://www.imdb.com/title/tt0373889/?ref_=ext_shr_lnk', '_blank')" src="img/films/HPop.png" class="carousel-card hpop" />
+            </div>
+          </div>
+          <button class="carousel-btn next-films" id="nextBtn">→</button>
+        </article>
+        <article class="series">
+          <h1>Melhores Series</h1>
+          <div class="series-container">
+            <img onclick="window.location.href='about/dexter.html'" src="img/series/dexPoster.png" class="flex-card">
+            <img onclick="window.open('https://www.imdb.com/title/tt0417299/?ref_=ext_shr_lnk', '_blank')" src="img/series/atlab.png" class="flex-card">
+            <img onclick="window.open('https://www.imdb.com/title/tt24053860/?ref_=ext_shr_lnk', '_blank')" src="img/series/The Jackle.png" class="flex-card">
+            <img onclick="window.open('https://www.imdb.com/title/tt9561862/?ref_=ext_shr_lnk', '_blank')" src="img/series/ldr.png" class="flex-card">
+            <img onclick="window.open('https://www.imdb.com/title/tt2861424/?ref_=ext_shr_lnk', '_blank')" src="img/series/RnM.png" class="flex-card">
+          </div>
+        </article>
+    </main>
+    <footer>
+      <hr>
+      <p>Copyright © 2025 Lamarck. Todos os direitos reservados</p>
+      <a href="https://lamarckv.github.io/Apresenta-oPessoal/" target="_blank">Veja um pouco sobre mim</a>
+    </footer>
+    <script src="javaScript/index.js"></script>
+  </body>
+</html>

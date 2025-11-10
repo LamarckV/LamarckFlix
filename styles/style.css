@@ -1,0 +1,255 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+  background-color: black;
+}
+/* HEADER */
+header {
+  width: 100%;
+  height: 40px;
+  position: fixed;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.lamarckflix {
+  width: 12.5%;
+}
+
+/* LANDING */
+.landing {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-image: url("../assets/background.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: black;
+}
+hr {
+  width: 90%;
+  position: absolute;
+  top: 100%;
+  left: 5%;
+  display: flex;
+}
+.dexterTitulo {
+  position: relative;
+  width: 30%;
+  top: 20%;
+  left: 5%;
+}
+a {
+  text-decoration: none;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+.landingButtons {
+  position: relative;
+}
+.Trailer {
+  position: relative;
+  top: 25%;
+  left: 5%;
+  padding: 10px;
+  width: 170px;
+  background-color: white;
+  border-radius: 5px;
+  text-align: center;
+  color: black;
+  transition: 0.5s ease;
+}
+.about {
+  position: relative;
+  top: 19.7%;
+  left: 20%;
+  width: 170px;
+  padding: 10px;
+  background-color: rgba(91, 91, 91, 0.737);
+  border-radius: 5px;
+  text-align: center;
+  transition: 0.5s ease;
+}
+.about:hover {
+  background-color: rgba(60, 60, 60, 0.737);
+  transition: 0.5s ease;
+}
+.Trailer:hover {
+  background-color: #a7a7a7;
+  transition: 0.5s ease;
+}
+
+/* FILMES E SERIES */
+.principal {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  height: 150vh;
+}
+.carousel-wrapper {
+  position: relative;
+  max-width: 1900px;
+  height: 400px;
+  display: flex;
+  overflow: hidden;
+}
+.filmes {
+  position: absolute;
+  top: -16%;
+  height: 100vh;
+}
+.carousel-card {
+  width: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.carousel-track {
+  display: flex;
+  gap: 25px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-btn {
+  position: relative;
+  height: 339px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border: none;
+  width: 30px;
+  z-index: 2;
+}
+.next-films {
+  position: relative;
+  top: -370px;
+  right: -99%;
+}
+.prev-films {
+  position: relative;
+  top: 370px;
+}
+button {
+  color: white;
+}
+
+.principal > h1 {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  position: absolute;
+  top: 120px;
+  left: 2%;
+}
+.carousel-card {
+  width: 15%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  position: relative;
+}
+
+/* Cria um "espaço" interno invisível para que o scale não corte */
+.carousel-card::before {
+  content: "";
+  position: absolute;
+  top: -10%;
+  left: -10%;
+  right: -10%;
+  bottom: -10%;
+  z-index: -1;
+}
+.carousel-card:hover {
+  transform: scale(1.1);
+  opacity: 1;
+  z-index: 3;
+}
+.carousel-card img,
+.carousel-card {
+  height: auto;
+  max-height: 100%;
+  object-fit: contain;
+}
+.carousel-track {
+  align-items: center; /* mantém o alinhamento sem esticar */
+}
+
+/* series */
+.series-container {
+  position: relative;
+  left: 10%;
+  display: flex;
+  gap: 25px;
+}
+.flex-card {
+  width: 20%;
+}
+.flex-card {
+  width: 15%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  position: relative;
+}
+
+/* Cria um "espaço" interno invisível para que o scale não corte */
+.flex-card::before {
+  content: "";
+  position: absolute;
+  top: -10%;
+  left: -10%;
+  right: -10%;
+  bottom: -10%;
+  z-index: -1;
+}
+.flex-card:hover {
+  transform: scale(1.1);
+  opacity: 1;
+  z-index: 2;
+}
+.flex-card img,
+.flex-card {
+  height: auto;
+  max-height: 100%;
+  object-fit: contain;
+}
+.series {
+  position: absolute;
+  top: 55%;
+}
+.series > h1 {
+  position: relative;
+  top: -10px;
+  left: 3%;
+  width: 20%;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* FOOTER */
+footer {
+  position: absolute;
+  top: 1800px;
+  width: 100%;
+  height: 10vh;
+}
+footer > hr {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  left: 0;
+  opacity: 0.7;
+}
+footer > p {
+  position: absolute;
+  top: 10px;
+  color: rgb(159, 159, 159);
+  font-family: "Montserrat", sans-serif;
+}
+footer > a {
+  position: absolute;
+  top: 35px;
+  color: rgb(159, 159, 159);
+}

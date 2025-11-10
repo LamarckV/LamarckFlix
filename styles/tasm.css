@@ -1,0 +1,52 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: white;
+}
+body {
+  background-image: url("../img/films/tasmBackground.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.lamarckflix {
+  width: 15%;
+  cursor: pointer;
+}
+.title {
+  position: absolute;
+  left: 3%;
+  top: -50px;
+  width: 35%;
+}
+.text-container {
+  position: absolute;
+  top: 270px;
+  left: 6.5%;
+  width: 30%;
+}
+.text-container > p {
+  font-family: "Montserrat", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+.Trailer {
+  position: absolute;
+  top: 85%;
+  left: 14%;
+  padding: 10px;
+  width: 170px;
+  background-color: rgba(91, 91, 91, 0.737);
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+  transition: 0.5s ease;
+}
+.Trailer:hover {
+  background-color: rgba(60, 60, 60, 0.737);
+  transition: 0.5s ease;
+}
